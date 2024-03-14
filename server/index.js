@@ -11,7 +11,7 @@ import cookieParser from 'cookie-parser';
 dotenv.config();
 
 mongoose.connect(process.env.MONGO)
-.then(() => console.log('MongoDB is Connected!'))
+.then(() => console.log('mongodb+srv://aqibmahmood221:12345@cluster0.dlotx0s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
 .catch(err => console.log(err));
 
 const app = express()
