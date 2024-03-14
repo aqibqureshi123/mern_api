@@ -28,7 +28,7 @@ const SignIn = () => {
     try {
       
       dispatch(signInStart());  
-      const res = await fetch("/api/auth/signin", {
+      const res = await fetch("https://mern-api-server.vercel.app/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
