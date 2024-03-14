@@ -26,7 +26,7 @@ const SignUp = () => {
     
       setLoading(true);
       setErrorMessage(null);
-      const res = await fetch("/api/auth/signup", {
+      const res = await fetch("https://mern-api-server.vercel.app/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
